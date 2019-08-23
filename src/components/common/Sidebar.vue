@@ -138,7 +138,10 @@
         },
         computed:{
             onRoutes(){
-                return this.$route.path.replace('/','');
+                var path = this.$route.path;
+                var test =path.replace('/','');
+                console.log(path+"---"+test);
+                return test;
             }
         },
         created(){
